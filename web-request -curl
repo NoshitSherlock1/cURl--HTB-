@@ -1,0 +1,53 @@
+FQDN - Fully qualified Domain Name 
+URL - Uniform Resource locator 
+DNS -Doamin Name Server
+
+scheme -> http or https://
+user
+host 
+port -> 80 default
+path 
+query string
+frgamants
+
+URL ->Dns resolve ->IP address ->web request -> process -> response -> /index -> status code 
+
+cURL - client URL
+curl url
+curl -O /file name 
+s- status
+curl -s -O smtg.com/p
+curl -k url to skip SSL validation 
+
+HTTP -> clear text ->drawback -> [man in the middle attack] ->intercept
+HTTPS -> encypted communication 
+
+HTTP req -> GET path version 
+HTTP res-> version and http response code (200)
+			
+curl url -v for req and res headers 
+curl url -vvv
+(401) - unauthorized
+curl -I or i -H send as header auth or cookie 
+curl -A to change user agent 
+
+response codes {
+1xx  - provides information 
+2xx- valid request / req success 
+3xx - redirection of client from server 
+4xx- improper request / bad format / doesnt exist 
+5xx - fault in http method 
+}
+
+curl - X POST flag  && d-req
+-L for redirection 
+
+curl - b {cookie} url 
+crud - create read update delete 
+post - create 
+read - get 
+update -put 
+del - delete 
+
+curl -X method url -d 'value' -H 'manipulation'  -b{cookies}
+
